@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="title">ToDo List</div>
+
+    <div class="addtask">
+      <input type="text" id="todoText" placeholder="Add your task" />
+      <i id="plus" class="fa-solid fa-plus" onclick="addTask()"></i>
+    </div>
+
+    <h5 id="Alert"></h5>
+
+    <div class="tasks">
+      <div class="tasktext">Code</div>
+      <i class="fa-solid fa-check" onclick="updateEl(event)"></i>
+      <i class="fa-solid fa-trash" onclick="deleteEl(event)"></i>
+    </div>
+
+    <div class="tasks">
+      <div class="tasktext">Edit</div>
+      <i class="fa-solid fa-check" onclick="updateEl(event)"></i>
+      <i class="fa-solid fa-trash" onclick="deleteEl(event)"></i>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
